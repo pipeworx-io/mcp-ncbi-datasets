@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-ncbi-datasets",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "NCBI Datasets — the US National Library of Medicine's genome, gene and taxonomy reference service: which assemblies exist for an organism and how good they are, where a gene sits on the genome and what it is called everywhere else, and the NCBI taxonomy tree with per-node assembly and gene counts.",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-ncbi-datasets": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "ncbi-datasets"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-ncbi-datasets.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/ncbi-datasets",
   "pipeworx": {
-    "sourceHash": "v1-825e55e26ff02d93bf70d39e7ee46624f3dddd70aea46507a9d9f218c4733020",
-    "sourceCommit": "774de7f685a75e02d0b828d24a7b94794102152c"
+    "mode": "gateway",
+    "slug": "ncbi-datasets",
+    "gatewaySlug": "ncbi-datasets",
+    "sourceHash": "v1-1a4be15b7431765887912f1e9a046f3175879f0b4dd1b7ba5c9a687128f63cbf",
+    "sourceCommit": "5c89d6abb778d45da5d92002eb251978622bedf9"
   }
 }
