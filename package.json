@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-ncbi-datasets",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "NCBI Datasets — the US National Library of Medicine's genome, gene and taxonomy reference service: which assemblies exist for an organism and how good they are, where a gene sits on the genome and what it is called everywhere else, and the NCBI taxonomy tree with per-node assembly and gene counts.",
   "type": "module",
   "main": "lib/index.js",
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "ncbi-datasets",
     "gatewaySlug": "ncbi-datasets",
-    "sourceHash": "v1-1a4be15b7431765887912f1e9a046f3175879f0b4dd1b7ba5c9a687128f63cbf",
-    "sourceCommit": "5c89d6abb778d45da5d92002eb251978622bedf9"
+    "sourceHash": "v1-d5d7564bc60b102918281ac456bc668c38364c5a20ef1dc7afcb3a0adf7a0813",
+    "sourceCommit": "56cf550e46fed96c0101a3877ccaf8357eecf016"
   }
 }
